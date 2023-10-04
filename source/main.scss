@@ -10,7 +10,10 @@ $button-bg-color: #44bd32;
   font-family: $font-family;
 }
 
+@use "config/variaveis" font-family: variaveis.$fontPrincipal;
+
 body {
+  font-family: variaveis.$font-family;
   background-color: $primary-bg-color;
 }
 
@@ -46,7 +49,7 @@ header {
     margin-left: 24px;
 
     a {
-      color: #fff;
+      color: variaveis.$link-colors;
       text-decoration: none;
     }
   }
